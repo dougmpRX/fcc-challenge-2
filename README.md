@@ -1,2 +1,2 @@
-# fcc-challenge-2
-FreeCodeCamp Challenge 2: Build a Survey Form
+# FreeCodeCamp Challenge 2: Build a Survey Form
+This is part of the Responsive Web Design Course.
