@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umbrella Corp Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 id="title">Umbrella Corp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve our products</p>
+    </header>
+
+    <form action="" class="form" id="survey-form">
+        <div class="form-group">
+            <p><label for="name" id="name-label">Name</label></p>
+            <p><input type="text" name="name" class="form-input" id="name" placeholder="Enter your name" required></p>
+        </div>
+        <div class="form-group">
+            <p><label for="email" id="email-label">Email</label></p>
+            <p><input type="email" name="email" class="form-input" id="email" placeholder="Enter your Email" required></p>
+        </div>
+        <div class="form-group">
+            <p><label for="age" id="number-label">Age (optional)</label></p>
+            <p><input type="number" name="age" id="number" class="form-input" placeholder="Age" min="1" max="130" required></p>
+        </div>
+        <div class="form-group">
+            <p><label for="role">Which option best describes your current role?</label></p>
+            <select name="role" id="dropdown" class="form-input">
+                <option disabled selected value>Select an option</option>
+                <option value="1">Biotechnology Researcher</option>
+                <option value="2">Chemistry Teacher</option>
+                <option value="3">Nanotechnology Engineer</option>
+                <option value="4">Quantum Physics Student</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Would you recommend Umbrela Corporation to a friend?</p>
+            <p>
+                <input type="radio" name="user-recommend" class="radio" value="yes" checked>
+                <label for="yes">Of course!</label>
+            </p>
+            <p>
+                <input type="radio" name="user-recommend" class="radio" value="no">
+                <label for="no">Surely not!</label>
+            </p>
+            <p>
+                <input type="radio" name="user-recommend" class="radio" value="maybe">
+                <label for="maybe">Maybe...</label>
+            </p>
+        </div>
+        <div class="form-group">
+            <p>What is your favorite feature of Umbrella Corp?</p>
+            <select name="favorite" class="form-input">
+                <option disabled selected value>Select an option</option>
+                <option value="biotech">Biotechnology development</option>
+                <option value="assays">Human-oriented clinical assays</option>
+                <option value="virology">Virology specialities</option>                
+            </select>
+        </div>
+        <div class="form-group">
+            <p>What would you like to see improved? (Check all that apply)</p>
+            <p>
+                <input type="checkbox" name="transparency" id="form-checkbox" value="research">
+                <label for="transparency">Research transparency</label>
+            </p>
+            <p>
+                <input type="checkbox" name="social" class="form-checkbox" value="social">
+                <label for="social">Social environment</label>
+            </p>
+            <p>
+                <input type="checkbox" name="cost" class="form-checkbox" value="costs">
+                <label for="cost">Product costs</label>
+            </p>
+            <p>
+                <input type="checkbox" name="other" class="form-checkbox" value="other">
+                <label for="other">Other... (insert below)</label>                
+            </p>
+            <p>
+                <input type="text" name="add-other" class="form-input" placeholder="Other improvements...">
+            </p>
+        </div>
+        <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <p><textarea name="suggestion" id="textarea" cols="30" rows="10" class="form-input" placeholder="Enter your comment here..."></textarea></p>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+    <footer>
+        <p>This is a parody website. Umbrella Corporation is part of the Resident Evil videogame series. Capcom Co. all rights reserved.</p>
+    </footer>
+</body>
+</html>
